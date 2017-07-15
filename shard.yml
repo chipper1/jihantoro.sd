@@ -1,0 +1,24 @@
+name: jihantoro
+version: 0.1.0
+
+authors:
+  - Rubi Jihantoro <jihantoro8@gmail.com>
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    branch: master
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+  db:
+    github: crystal-lang/crystal-db
+  kemal-session:
+    github: kemalcr/kemal-session
+
+targets:
+  jihantoro:
+    main: src/jihantoro.cr
+
+crystal: 0.23.0
+
+license: MIT

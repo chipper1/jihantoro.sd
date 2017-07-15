@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id" class="no-js">
+<head>
+<meta charset="utf-8">
+<title>Rubi Jihantoro - Versi Indonesia</title>
+<meta property="og:locale" content="id">
+<meta property="og:site_name" content="Rubi Jihantoro">
+<meta property="og:title" content="Rubi Jihantoro">
+<link rel="canonical" href="http://jihantoro.net/">
+<meta property="og:url" content="http://jihantoro.net/">
+<meta name="twitter:site" content="@codenoid">
+<meta name="twitter:title" content="Rubi Jihantoro">
+<meta name="twitter:description" content="Website resmi Rubi Jihantoro, membahas tentang teknologi, programming, dan topik terkait lain nya.">
+<meta name="twitter:url" content="http://jihantoro.net/">
+<meta name="twitter:card" content="summary">
+<!-- <link rel="next" href="http://serdardogruyol.com/page2/"> -->
+<script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Rubi Jihantoro",
+      "url" : "http://jihantoro.net",
+      "sameAs" : null
+    }
+</script>
+<!-- <link href="http://serdardogruyol.com/feed.xml" type="application/atom+xml" rel="alternate" title="Rubi Jihantoro Feed"> -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+<link rel="stylesheet" href="/css/style.css">
+<meta http-equiv="cleartype" content="on">
+  </head>
+
+  <body class="layout--archive">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">Rubi Jihantoro</a></li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<div id="main" role="main">
+  <div class="sidebar sticky">
+<div itemscope itemtype="http://schema.org/Person">
+  <div class="author__avatar">
+    	<img src="/rubi-jihantoro.png" class="author__avatar" alt="Rubi Jihantoro"> 
+  </div>
+  <div class="author__content">
+    <h3 class="author__name">Rubi Jihantoro</h3>
+    <p class="author__bio">Polyglot, Developer, Book Writer, Startup Boy</p>
+  </div>
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Yogyakarta</li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/rubi-jihantoro/"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> Linkedin</a></li>
+      <li><a target="_blank" href="https://www.facebook.com/real.jihantoro"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+      <li><a target="_blank" href="https://twitter.com/codenoid"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      <li><a target="_blank" href="https://github.com/codenoid"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+  <div class="archive">
+    <h1 class="page__title"></h1>
+    <h3 class="archive__subtitle">Artikel Terbaru</h3>
+<% rd.each do %>
+<% read = rd.read(String) %>
+<% url = rd.read(String) %>
+<% data = read.split("<~|~>") %>
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="/id/read/<%= url %>" rel="permalink"><%= data[0] %></a> 
+    </h2>
+    <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+	   <%= reading_time(data[1].size) %> Menit Membaca
+    </p>
+    <p class="archive__item-excerpt" itemprop="description"><%= data[1][0...80] %></p>
+  </article>
+</div>
+<% end %>
+<nav class="pagination" style="display: none;">
+  <ul>
+    <li><a href="#" class="disabled"><span aria-hidden="true">Sebelumnya</span></a></li>
+    <li><a href="#" class="disabled current">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">Selanjutnya</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="page__footer">
+      <footer>
+<div class="page__footer-follow">
+  <ul class="social-icons">
+      <li><strong>Ikuti:</strong></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/rubi-jihantoro/"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> Linkedin</a></li>
+      <li><a target="_blank" href="https://www.facebook.com/real.jihantoro/"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+      <li><a target="_blank" href="https://twitter.com/codenoid"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      <li><a target="_blank" href="http://github.com/codenoid"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 Rubi Jihantoro. Powered by <a href="http://kemalcr.com" rel="nofollow">Kemal</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+<script src="/js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-102576072-1', 'auto');
+  ga('send', 'pageview');
+</script>
+  </body>
+</html>
