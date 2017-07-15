@@ -1,14 +1,19 @@
-# jihantoro
+# jihantoro.sd
 
-TODO: Write a description here
+An Serdar Dogruyol's blog written in Crystal Kemal
 
 ## Installation
 
-TODO: Write installation instructions here
+```
+git clone https://github.com/codenoid/jihantoro.sd
+cd jihantoro.sd
+shards install
+crystal build --release src/jihantoro.cr
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+I use SQLite3 as the database
 
 ## Development
 
@@ -16,7 +21,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/jihantoro/fork )
+1. Fork it ( https://github.com/codenoid/jihantoro.sd/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -24,4 +29,5 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Rubi Jihantoro - creator, maintainer
+- [codenoid](https://github.com/codenoid) Rubi Jihantoro - creator, maintainer
+- [sdogruyol](https://github.com/sdogruyol) Serdar Dogruyol - Blogger, Kemal Founder
