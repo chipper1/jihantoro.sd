@@ -1,6 +1,6 @@
 # jihantoro.sd [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/veelenga/awesome-crystal)
 
-An Serdar Dogruyol's blog written in Crystal Kemal
+An [Serdar Dogruyol's](http://serdardogruyol.com) blog written in Crystal Kemal
 
 ## Installation
 
@@ -8,16 +8,16 @@ An Serdar Dogruyol's blog written in Crystal Kemal
 git clone https://github.com/codenoid/jihantoro.sd
 cd jihantoro.sd
 shards install
-crystal build --release src/jihantoro.cr
+crystal build src/jihantoro.cr
 ```
 
 ## Usage
 
-I use SQLite3 as the database
+I use SQLite3 as the database (libsqlite3-dev)
 
 ## Development
 
-TODO: Write development instructions here
+- [ ] Flask as Admin Panel
 
 ## Contributing
 
@@ -30,4 +30,3 @@ TODO: Write development instructions here
 ## Contributors
 
 - [codenoid](https://github.com/codenoid) Rubi Jihantoro - creator, maintainer
-- [sdogruyol](https://github.com/sdogruyol) Serdar Dogruyol - Blogger, Kemal Founder
