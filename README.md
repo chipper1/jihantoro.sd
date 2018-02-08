@@ -17,7 +17,9 @@ I use SQLite3 as the database (libsqlite3-dev)
 
 ## Development
 
-- [ ] Flask as Admin Panel
+- [x] Flask as Admin Panel
+- [ ] Fix bad logic
+- [ ] Fix bad feature
 
 ## Contributing
 
