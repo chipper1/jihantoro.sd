@@ -1,8 +1,9 @@
 # site Index, query all content inside database
 # and show all the content
-# TODO : Infinite Pagination
+# TODO : - Infinite Pagination
+#        - fix all of this thing
 get "/" do
-  SQL.query "select content, url from main_posts where wdyw='1'" do |data|
+  SQL.query "select title, content, url from main_post where wdyw='1'" do |data|
     rd = data
     render "src/views/home.ecr"
   end
@@ -12,10 +13,11 @@ end
 # `query_one` for getting only one article data
 get "/read/:id" do |env|
   id = env.params.url["id"]
-  data = SQL.query_one? "select content from main_posts where url=? and wdyw='1'", id, as: {String}
+  data = toone("select title, content from main_post where url='#{id}' and wdyw='1'")
   if data
-    rd = data.split("<~|~>")
-    tags = rd[2].split(",")
+    title = data["title"]
+    rd = data["content"].split("<~|~>")
+    tags = rd[1].split(",")
     render "src/views/detailpost.ecr"
   else
     env.redirect "/404"
@@ -34,6 +36,20 @@ get "/404" do
 end
 
 # helper function
+# fix this
 def reading_time(wc)
   return (wc / 200.0).ceil.to_i
+end
+
+def toone(query)
+  arr = {} of String => String
+  SQL.query query do |data|
+    data.each do
+      title = data.read(String)
+      content = data.read(String)
+      arr["title"] = title
+      arr["content"] = content
+    end
+  end
+  arr
 end
