@@ -2,6 +2,14 @@
 
 An [Serdar Dogruyol's](http://serdardogruyol.com) blog written in Crystal Kemal
 
+### Stack
+* [Crystal Kemal](http://kemalcr.com)
+* [Python Flask](http://flask.pocoo.org/)
+* SQLite - `apt-get install libsqlite3-dev`
+* [Redis](https://redis.io/download)
+* [Crystal](https://crystal-lang.org)
+* [Python 2.7](https://www.python.org/download/releases/2.7/)
+
 ## Installation
 
 ```
