@@ -12,11 +12,42 @@ An [Serdar Dogruyol's](http://serdardogruyol.com) blog written in Crystal Kemal
 
 ## Installation
 
+### Crystal Language installation
+
+```shell
+sudo apt-get install \
+  libbsd-dev \
+  libedit-dev \
+  libevent-core-2.0-5 \
+  libevent-dev \
+  libevent-extra-2.0-5 \
+  libevent-openssl-2.0-5 \
+  libevent-pthreads-2.0-5 \
+  libgmp-dev \
+  libgmpxx4ldbl \
+  libssl-dev \
+  libxml2-dev \
+  libyaml-dev \
+  libreadline-dev \
+  automake \
+  libtool \
+  git \
+  llvm \
+  libpcre3-dev \
+  libgc-dev \
+  zlib1g-dev \
+  build-essential -y
+curl https://dist.crystal-lang.org/apt/setup.sh | sudo bash
+sudo apt-get install crystal
 ```
+
+### Clone repository
+
+```shell
 git clone https://github.com/codenoid/jihantoro.sd
 cd jihantoro.sd
 shards install
-crystal build src/jihantoro.cr
+crystal run src/jihantoro.cr
 ```
 
 ## Usage
