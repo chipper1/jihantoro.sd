@@ -62,21 +62,10 @@
                   <%= rd[0] %>
                </section>
                <footer class="page__meta">
-                  <p class="page__taxonomy">
-                     <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
-                     <span itemprop="keywords">
-                     <% (0...tags.size).each do |i| %>
-                     <a href="http://jihantoro.net/tags/<%= tags[i] %>" class="page__taxonomy-item" rel="tag"><%= tags[i] %></a><span class="sep">, </span>
-                     <% end %>
-                     </span>
+                  <p class="page__date">
+                    <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong>
+                    <time datetime="2015-03-07T09:03:13+00:00"><%= date %></time>
                   </p>
-                  <p class="page__taxonomy">
-                     <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
-                     <span itemprop="keywords">
-                     <a href="http://jihantoro.net/categories/<%= rd[2] %>" class="page__taxonomy-item" rel="tag"><%= rd[2] %></a>
-                     </span>
-                  </p>
-                  <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2015-03-07T09:03:13+00:00">March 07, 2015</time></p>
                </footer>
                <section class="page__share">
                   <h4 class="page__share-title">Share on</h4>

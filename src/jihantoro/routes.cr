@@ -13,9 +13,10 @@ end
 # `query_one` for getting only one article data
 get "/read/:id" do |env|
   id = env.params.url["id"]
-  data = toone("select title, content from main_post where url='#{id}' and wdyw='1'")
+  data = toone("select title, content, date from main_post where url='#{id}' and wdyw='1'")
   if data
     title = data["title"]
+    date = data["date"]
     rd = data["content"].split("<~|~>")
     tags = rd[1].split(",")
     render "src/views/detailpost.ecr"
@@ -47,8 +48,10 @@ def toone(query)
     data.each do
       title = data.read(String)
       content = data.read(String)
+      date = data.read(String)
       arr["title"] = title
       arr["content"] = content
+      arr["date"] = date
     end
   end
   arr

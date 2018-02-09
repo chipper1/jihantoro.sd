@@ -40,6 +40,7 @@ def _addpost():
 		date = datetime.date.today()
 		arr = ["1", post["title"], post["content"], post["url"], str(date)]
 		c.execute("INSERT INTO main_post (wdyw,title,content,url,date) VALUES (?,?,?,?,?);", arr)
+		conn.commit()
 		return redirect("/all-post")
 
 @app.route("/delete/<id>")
@@ -47,6 +48,7 @@ def _deletepost(id):
 	if "username" not in session:
 		return redirect("/login")
 	c.execute("DELETE FROM main_post WHERE id=?", id)
+	conn.commit()
 	return redirect("/all-post")
 
 @app.route("/login", methods=["GET", "POST"])
@@ -69,8 +71,10 @@ def _login():
 				session["username"] = post["username"]
 				return redirect("/")
 			else:
+				# wrong password
 				return redirect("/login")
 		else:
+			# user not found
 			return redirect("/login")
 
 @app.route("/logout")
