@@ -17,8 +17,7 @@ get "/read/:id" do |env|
   if data
     title = data["title"]
     date = data["date"]
-    rd = data["content"].split("<~|~>")
-    tags = rd[1].split(",")
+    content = data["content"]
     render "src/views/detailpost.ecr"
   else
     env.redirect "/404"
